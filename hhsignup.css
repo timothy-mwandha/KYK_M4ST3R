@@ -1,0 +1,71 @@
+.asterix
+{
+    color:red;
+}
+
+.label
+{
+    color: #3D5A99
+}
+
+
+#hhsignupcon
+{
+    border: 2px solid blue;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+#hhsignuprow1
+{
+    background-color:#3D5A99;
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+}
+p
+{
+    text-emphasis-color: white;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+#hhsignuprow2
+{
+    padding-top: 10px;
+}
+
+#hhsignuprow14
+{
+    
+
+}
+#row2col1, #row2col2, #row2col3, #row3col1, #row3col2 #row3col3
+{
+
+}
+.col-sm-4
+{
+  
+}
+
+#hhfna, #hhfna, #hhmna,#hhlna,#hhnat,#hhnid,#hhmo1,#hhmo2,#hhwan,
+#hhmmn,#hhema,#hhhmt,#hhad1,#hhad2,#hhad3,#hhad4,#hhad5,#hhad6,#hhad7,#hhad8,
+#hhad9,#hhedu, #hhsal,#hhex,#hhla1,#hhla2,#hhla3,#hhkid,#hhmdco,#hhintcle,#hhkykcn,
+#usenm,#hhHopas,#hh1pas
+{
+
+float: right;
+width: 65%;
+
+}
+
+#hhdobd, #hhdobm, #hhdoby, #hhgen, #hhrel, #hhtri
+{
+height: 25px;
+float: right;
+width: 65%;
+}

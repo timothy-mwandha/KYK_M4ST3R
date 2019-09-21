@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="hhsignup.css">
+    <title>House_Helper_SignUp</title>
+</head>
+<body>
+    <div class="container-fluid center-block" " id="hhsignupcon">
+        <div class="row" id="hhsignuprow1">
+            <div class="col-sm-12">
+                <p><b>Personal Information</b></p>
+
+            </div>
+            
+        </div>
+
+        <form class="form-group">
+
+        <!-- ROW 2 NAME starts here i.e. first, middle and last name  -->
+
+        <div class="row" id="hhsignuprow2">
+            <div class="col-sm-4 form-group" id="row2col1">
+                        <label for="hhfna" >First Name</label>
+                        <span class="asterix">*</span>
+                        <input type="text" id="hhfna" placeholder="e.g. Tim">
+               
+            </div>
+
+            <div class="col-sm-4 form-group" id="row2col2">
+                        <label for="hhmna" >Middle Name</label>
+                        <span class="asterix">*</span>
+                        <input type="text" id="hhmna" placeholder="e.g. Wampa">
+            </div>
+
+            <div class="col-sm-4 form-group" id="row2col3">
+                        <label for="hhlna" >Last Name</label>
+                        <span class="asterix">*</span>
+                        <input type="text" id="hhlna" placeholder="e.g. Tim">
+            </div>
+
+
+        </div>
+
+        <!-- ROW 3 DOB starts here i.e.  day, month, year dropdowns  -->
+
+        <div class="row" id="hhsignuprow3">
+                <div class="col-sm-4 form-group" id="row3col1">
+                    <label for="hhdobd" >Date of Birth</label>
+                    <span class="asterix">*</span>
+                    <select id="hhdobd" name="date">
+                        <option value="default">Select Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+
+                    </select>
+                </div>
+    
+                <div class="col-sm-4 form-group" id="row3col2">
+                        <label for="hhdobm" >Month</label>
+                        <span class="asterix">*</span>
+                        <select id="hhdobm" name="month">
+                                <option value="default">Select Month</option>
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                        </select>
+                </div>
+    
+                <div class="col-sm-4 form-group" id="row3col3">
+                        <label for="hhdoby" >Year</label>
+                        <span class="asterix">*</span>
+                        <select id="hhdoby" name="year">
+                                <option value="default">Select Year</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                                <option value="1988">1988</option>
+                                <option value="1987">1987</option>
+                                <option value="1986">1986</option>
+                                <option value="1985">1985</option>
+                                <option value="1984">1984</option>
+                                <option value="1983">1983</option>
+                                <option value="1982">1982</option>
+                                <option value="1981">1981</option>
+                                <option value="1980">1980</option>
+                                        
+                            </select>
+                </div>
+        </div>
+
+    <!-- ROW 4 starts here i.e. Gender, Nationality & NIN  -->
+
+
+    <div class="row" id="hhsignuprow4">
+            <div class="col-sm-4 form-group" id="row4col1">
+                <label for="hhgen" >Gender</label>
+                <span class="asterix">*</span>
+                <select id="hhgen" name="hhgend">
+                        <option value="default">Select Gender</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                </select>
+            </div>
+
+            <div class="col-sm-4 form-group" id="row4col2">
+                    <label for="hhnat" >Nationality</label>
+                    <span class="asterix">*</span>
+                    <select id="hhgen" name="hhnat">
+                                <option value="default">Select Country</option>
+                                <option value="ugandan">Uganda</option>
+                                <option value="burundian">Burundian</option>
+                                <option value="congolese">Congolese</option>
+                                <option value="kenyan">Kenyan</option>
+                                <option value="rwandese">Rwandese</option>
+                                <option value="somali">Somalian</option>
+                                <option value="sudanese">Sudanese</option>
+                                <option value="ethiopian">Ethiopian</option>
+                                <option value="tanzanian">Tanzania</option>
+                    </select>
+            </div>
+
+            <div class="col-sm-4 form-group" id="row4col3">
+                    <label for="hhnid">National ID No.</label>
+                    <span class="asterix">*</span>
+                    <input type="text" id="hhnid" placeholder="e.g. ZY87654321X9WV">
+            </div>
+    </div>
+    
+<!-- ROW 5 TELEPHONE CONTACTS starts here i.e. primary, secondary & whatsup lines.  -->
+
+
+<div class="row" id="hhsignuprow5">
+        <div class="col-sm-4 form-group" id="row5col1">
+            <label for="hhmo1" >Mobile No.</label>
+            <span class="asterix">*</span>
+            <input type="number" id="hhmo1" placeholder="e.g. 256772123456">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row5col2">
+                <label for="hhmo2" >Second Phone</label>
+                <span class="asterix"></span>
+                <input type="number" id="hhmo2" placeholder="e.g. 256752123456">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row5col3">
+                <label for="hhwan" >WhatsApp No.</label>
+                <span class="asterix"></span>
+                <input type="number" id="hhwan" placeholder="e.g. 256712123456">
+        </div>
+</div>
+
+<!-- ROW 6 starts here i.e. religion, tribe and email address -->
+
+<div class="row" id="hhsignuprow7">
+        <div class="col-sm-4 form-group" id="row7col1">
+            <label for="hhrel" >Religion</label>
+            <span class="asterix">*</span>
+        <select id="hhrel" name="hhreli">
+                <option value="default">Select Religion</option>
+                <option value="catholic">Catholic</option>
+                <option value="protestant">Protestant</option>
+                <option value="bornagain">Born Again Christian</option>
+                <option value="moslem">Moslem</option>
+                <option value="seventh Day">Seventh Day</option>
+                <option value="other">Other</option>
+        </select>
+        </div>
+
+        <div class="col-sm-4 form-group" id="row5col2">
+                <label for="hhtri" >Tribe</label>
+                <span class="asterix">*</span>
+                <select id="hhtri" name="hhtrib">
+                                <option value="default">Tribe</option>
+                                <option value="Acholi">Acholi</option>
+                                <option value="Alur">Alur</option>
+                                <option value="Aringa">Aringa</option>
+                                <option value="Bafumbira">Bafumbira</option>
+                                <option value="Baganda">Baganda</option>
+                                <option value="Bagisu">Bagisu</option>
+                                <option value="Bugwe">Bugwe</option>
+                                <option value="Bagwere">Bagwere</option>
+                                <option value="Bahororo">Bahororo</option>
+                                <option value="Bakiga">Bakiga</option>
+                                <option value="Balamogi">Balamogi</option>
+                                <option value="Bakonzo">Bakonzo</option>
+                                <option value="Batooro">Batooro</option>
+                                <option value="Banyankore">Banyankore</option>
+                                <option value="Banyarwanda">Banyarwanda</option>
+                                <option value="Banyoro">Banyoro</option>
+                                <option value="Baruuli">Baruuli</option>
+                                <option value="Basoga">Basoga</option>
+                                <option value="Basongora">Basongora</option>
+                                <option value="Batwa">Batwa</option>
+                                <option value="Baziba">Baziba</option>
+                                <option value="Chope">Chope</option>
+                                <option value="Dodoth">Dodoth</option>
+                                <option value="Ik_Teuso">Ik (Teuso)</option>
+                                <option value="Iteso">Iteso</option>
+                                <option value="Jie">Jie</option>
+                                <option value="Jopadhola">Jopadhola</option>
+                                <option value="Karimojong">Karimojong</option>
+                                <option value="Kebu">Kebu</option>
+                                <option value="Kumam">Kumam</option>
+                                <option value="Langi">Langi</option>
+                                <option value="Lendu">Lendu</option>
+                                <option value="Lugbara">Lugbara</option>
+                                <option value="Madi">Madi</option>
+                                <option value="Mvuba">Mvuba</option>
+                                <option value="Nubi">Nubi</option>
+                                <option value="Mening">Mening</option>
+                                <option value="Pokot">Pokot</option>
+                                <option value="Sabiny">Sabiny</option>
+                                <option value="Samia">Samia</option>
+                                <option value="Sebei">Sebei</option>
+
+                    </select>
+        </div>
+
+        <div class="col-sm-4 form-group" id="row5col3">
+                <label for="hhema">Email:</label>
+                <span class="asterix">*</span>
+                <input type="email" id="hhema" placeholder="example@gmail.com">
+        </div>
+                
+</div>
+
+<!-- ROW 8 ADDRESS starts here i.e. house no, street, village, -->
+
+<div class="row" id="hhsignuprow8">
+        <div class="col-sm-4 form-group" id="row8col1">
+            <label for="hhad1" >House no.</label>
+            <span class="asterix"></span>
+            <input type="text" id="hhad1" placeholder="House no.17">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row8col2">
+                <label for="hhad2" >Street Name</label>
+                <span class="asterix">*</span>
+                <input type="text" id="hhad2" placeholder="e.g. Bukoto street">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row8col3">
+                <label for="hhad3" >Village</label>
+                <span class="asterix">*</span>
+                <input type="text" id="hhad3" placeholder="e.g. Ntinda">
+        </div>
+</div>
+
+
+<!-- ROW 9 ADDRESS starts here i.e. parish, sub country
+county-->
+
+<div class="row" id="hhsignuprow9">
+        <div class="col-sm-4 form-group" id="row9col1">
+            <label for="hhad4" >Parish</label>
+            <span class="asterix"></span>
+            <input type="text" id="hhad4" placeholder="e.g. Naguru">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row9col2">
+                <label for="hhad5" >Sub County</label>
+                <span class="asterix"></span>
+                <input type="text" id="hhad5" placeholder="e.g. Nakawa">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row9col3">
+                <label for="hhad6" >County</label>
+                <span class="asterix"></span>
+                <input type="text" id="hhad6" placeholder="e.g. Kyandondo">
+        </div>
+</div>
+
+
+<!-- ROW 10 ADDRESS starts here i.e. district, country, House Owners-->
+
+<div class="row" id="hhsignuprow10">
+        <div class="col-sm-4 form-group" id="row10col1">
+            <label for="hhad7" >District</label>
+            <span class="asterix">*</span>
+            <input type="text" id="hhad7" placeholder="e.g. Kampala">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row10col2">
+                <label for="hhad8" >Country</label>
+                <span class="asterix">*</span>
+                <input type="text" id="hhad8" placeholder="e.g. Uganda">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row10col3">
+                <label for="hhad9" >GPS Coordinates</label>
+                <span class="asterix"></span>
+                <input type="number" id="hhad9" placeholder="e.g.05.987654,33.6345">
+        </div>
+</div>
+
+<!-- ROW 11 starts here i.e. LANGUAGES-->
+
+<div class="row" id="hhsignuprow11">
+        <div class="col-sm-4 form-group" id="row11col1">
+            <label for="hhla1" >Language 1</label>
+            <span class="asterix">*</span>
+            <input type="text" id="hhla1" placeholder="e.g. Luganda">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row11col2">
+                <label for="hhla2" >Language 2</label>
+                <span class="asterix">*</span>
+                <input type="text" id="hhla2" placeholder="e.g. English">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row11col3">
+                <label for="hhla2" >Language 3</label>
+                <span class="asterix">*</span>
+                <input type="text" id="hhla2" placeholder="e.g.Kiswahili">
+        </div>
+</div>
+
+
+<!-- ROW 12 - VERIFICATION STATUS starts here i.e. kyk#, medical, bgd_check-->
+
+<div class="row" id="hhsignuprow12">
+        <div class="col-sm-4 form-group" id="row12col1">
+            <label for="hhkid" >KYK #No.</label>
+            <span class="asterix">*</span>
+            <input type="text" id="hhkid" placeholder="e.g. Luganda">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row12col2">
+                <label for="hhmdco" >Medical Check</label>
+                <span class="asterix">*</span>
+                <input type="text" id="hhmdco" placeholder="e.g. English">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row12col3">
+                <label for="hhintcle" >Background Check</label>
+                <span class="asterix">*</span>
+                <input type="text" id="hhintcle" placeholder="e.g.Kiswahili">
+        </div>
+</div>
+
+
+<!-- ROW 13 - User name + Password + Pass_confirm number starts here -->
+
+<div class="row" id="hhsignuprow13">
+        <div class="col-sm-4 form-group" id="row13col1">
+            <label for="usenm" >User name</label>
+            <span class="asterix">*</span>
+            <input type="text" id="usenm" placeholder="e.g. Cl3v3rus3r">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row13col2">
+                <label for="hhmdco" >Enter Password</label>
+                <span class="asterix">*</span>
+                <input type="text" id="hhmdco" placeholder="e.g. English">
+        </div>
+
+        <div class="col-sm-4 form-group" id="row13col3">
+                <label for="hhintcle" >Confirm Password</label>
+                <span class="asterix">*</span>
+                <input type="text" id="hhintcle" placeholder="e.g.Kiswahili">
+        </div>
+</div>
+
+<!-- ROW 14 - starts here i.e. submit button -->
+
+<div class="row" id="hhsignuprow14">
+        <div class="col-sm-4 form-group" id="row14col1">
+            <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ROW 15 - Footer here i.e. submit button --->
+
+
+
+
+    </div>
+</form>
+</div>
+</body>
+</html>
