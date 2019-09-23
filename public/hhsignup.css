@@ -1,0 +1,75 @@
+.asterix
+{
+    color:red;
+}
+
+label
+{
+    color: #3D5A99;
+    text-align:right;
+    font-size: smaller;
+}
+
+
+#hhsignupcon
+{
+    border: 2px solid blue;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#subbtn
+{
+font-size: 2rem;
+}
+
+
+#hhsignuprow1
+{
+    background-color:#265b89;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+p
+{
+    text-emphasis-color: white;
+    position: relative;
+}
+
+#hhsignuprow2
+{
+    padding-top: 10px;
+}
+
+
+#hhfna, #hhfna, #hhmna,#hhlna,#hhnat,#hhnid,#hhmo1,#hhmo2,#hhwan,
+#hhmmn,#hhema,#hhhmt,#hhad1,#hhad2,#hhad3,#hhad4,#hhad5,#hhad6,#hhad7,
+#hhad9,#hhedu, #hhsal,#hhla1,#hhla2,#hhla3,#hhkid,#hhkykcn,
+#usenm,#hhHopas,#hh1pas
+{
+
+float: right;
+width: 50%;
+
+}
+
+
+#hhdoby, #hhgen, #hhrel, #hhtri, #hhedu, #hhsal, #hhdobd, #hhdobm, #hhla1, #hhla2, #hhla3,
+#hhintcle, #hhmdco, #hhex, #hhad8
+{
+height: 25px;
+float: right;
+width: 50%;
+}
+
+#row15col1
+{
+    background-color:#265b89;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+
+}
