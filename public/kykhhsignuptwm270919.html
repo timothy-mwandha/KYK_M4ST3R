@@ -9,9 +9,13 @@
         <link rel="stylesheet" href="hhsignup.css">
         <title>House_Helper_SignUp</title>
 
-<style>
 
-.asterix
+        <style>
+        
+        
+        
+        
+        .asterix
 {
     color:red;
 }
@@ -20,7 +24,7 @@ label
 {
     color: #3D5A99;
     text-align:right;
-   
+    font-size: smaller;
 }
 
 
@@ -35,6 +39,10 @@ label
 #subbtn
 {
 font-size: 2rem;
+width: 30%;
+margin: 25px;
+margin-left : auto;
+margin-right: auto;
 }
 
 
@@ -50,6 +58,8 @@ p
 {
     text-emphasis-color: white;
     position: relative;
+    font-size: 14px;
+    vertical-align: text-bottom;
 }
 
 #hhsignuprow2
@@ -59,9 +69,9 @@ p
 
 
 #hhfna, #hhfna, #hhmna,#hhlna,#hhnat,#hhnid,#hhmo1,#hhmo2,#hhwan,
-#hhmmn,#hhema,#hhhmt,#hhad1,#hhad2,#hhad3,#hhad4,#hhad5,#hhad6,#hhad7,
+#hhmmn,#hhema,#hhhmt,#hhad1,#hhad2,#hhad3,#hhad4,#hhad5,#hhad6,
 #hhad9,#hhedu, #hhsal,#hhla1,#hhla2,#hhla3,#hhkid,#hhkykcn,
-#usenm,#hhHopas,#hh1pas
+#usenm,#hhHopas,#hh1pas, #hhusenm
 {
 
 float: right;
@@ -71,7 +81,7 @@ width: 50%;
 
 
 #hhdoby, #hhgen, #hhrel, #hhtri, #hhedu, #hhsal, #hhdobd, #hhdobm, #hhla1, #hhla2, #hhla3,
-#hhintcle, #hhmdco, #hhex, #hhad8
+#hhintcle, #hhmdco, #hhex, #hhad7,#hhad8
 {
 height: 25px;
 float: right;
@@ -87,15 +97,32 @@ width: 50%;
 
 }
 
-</style>
+::placeholder
+{
+color: #265b89;
+font-size: 1rem;
 
+}
+
+select
+{
+    color: #265b89;
+    font-size: 1rem;
+}
+
+
+        
+        
+        
+        
+        </style>
 </head>
 
 <body>
         <div class="container-fluid center-block" " id=" hhsignupcon">
                 <div class="row" id="hhsignuprow1">
-                        <div class="col-sm-12">
-                                <p><b>House Helpers Personal Information</b> </p> 
+                        <div class="col-sm-12" id="row1col1">
+                                <p><b>House Helpers SignUp Here.</b> </p>
                         </div>
 
                 </div>
@@ -352,7 +379,7 @@ width: 50%;
                                 <div class="col-sm-4 form-group" id="row5col3">
                                         <label for="hhema">Email:</label>
                                         <span class="asterix">*</span>
-                                        <input type="email" id="hhema" placeholder="example@gmail.com"required>
+                                        <input type="email" id="hhema" placeholder="example@gmail.com" required>
                                 </div>
 
                         </div>
@@ -365,7 +392,7 @@ width: 50%;
                                 <div class="col-sm-4 form-group" id="row7col1">
                                         <label for="hhedu">Education Level</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhedu" name="hhedul"required>
+                                        <select id="hhedu" name="hhedul" required>
                                                 <option value="default">Education</option>
                                                 <option value="PLE">PLE</option>
                                                 <option value="UCE">UCE</option>
@@ -382,7 +409,7 @@ width: 50%;
                                 <div class="col-sm-4 form-group" id="row7col2">
                                         <label for="hhsal">Salary Wanted</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhsal" name="hhnat"required>
+                                        <select id="hhsal" name="hhnat" required>
                                                 <option value="default">Min Salary Acceptable</option>
                                                 <option value="150k">shs150,000 - shs199,999</option>
                                                 <option value="200k">shs200,000 - shs299,999</option>
@@ -430,13 +457,13 @@ width: 50%;
                                 <div class="col-sm-4 form-group" id="row8col2">
                                         <label for="hhad2">Street Name</label>
                                         <span class="asterix"></span>
-                                        <input type="text" id="hhad2" placeholder="e.g. Bukoto street"required>
+                                        <input type="text" id="hhad2" placeholder="e.g. Bukoto street" required>
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row8col3">
                                         <label for="hhad3">Village</label>
                                         <span class="asterix">*</span>
-                                        <input type="text" id="hhad3" placeholder="e.g. Ntinda"required>
+                                        <input type="text" id="hhad3" placeholder="e.g. Ntinda" required>
                                 </div>
                         </div>
 
@@ -471,7 +498,139 @@ county-->
                                 <div class="col-sm-4 form-group" id="row10col1">
                                         <label for="hhad7">District</label>
                                         <span class="asterix">*</span>
-                                        <input type="text" id="hhad7" placeholder="e.g. Kampala"required>
+                                        <select id="hhad7" name="hhadd7" required>
+                                                <option value="default">Select home district</option>
+                                                <option value="Abim">Abim</option>
+                                                <option value="Adjumani">Adjumani</option>
+                                                <option value="Agago">Agago</option>
+                                                <option value="Alebtong">Alebtong</option>
+                                                <option value="Amolatar">Amolatar</option>
+                                                <option value="Amudat">Amudat</option>
+                                                <option value="Amuria">Amuria</option>
+                                                <option value="Amuru">Amuru</option>
+                                                <option value="Apac">Apac</option>
+                                                <option value="Arua ">Arua </option>
+                                                <option value="Budaka ">Budaka </option>
+                                                <option value="Bududa ">Bududa </option>
+                                                <option value="Bugiri ">Bugiri </option>
+                                                <option value="Bugweri">Bugweri</option>
+                                                <option value="Buhweju">Buhweju</option>
+                                                <option value="Buikwe">Buikwe</option>
+                                                <option value="Bukedea">Bukedea</option>
+                                                <option value="Bukomansimbi">Bukomansimbi</option>
+                                                <option value="Bukwo">Bukwo</option>
+                                                <option value="Bulambuli">Bulambuli</option>
+                                                <option value="Buliisa">Buliisa</option>
+                                                <option value="Bundibugyo">Bundibugyo</option>
+                                                <option value="Bunyangabu">Bunyangabu</option>
+                                                <option value="Bushenyi">Bushenyi</option>
+                                                <option value="Busia">Busia</option>
+                                                <option value="Butaleja">Butaleja</option>
+                                                <option value="Butambala">Butambala</option>
+                                                <option value="Butebo">Butebo</option>
+                                                <option value="Buvuma">Buvuma</option>
+                                                <option value="Buyende">Buyende</option>
+                                                <option value="Dokolo">Dokolo</option>
+                                                <option value="Gomba">Gomba</option>
+                                                <option value="Gulu">Gulu</option>
+                                                <option value="Hoima">Hoima</option>
+                                                <option value="Ibanda">Ibanda</option>
+                                                <option value="Iganga">Iganga</option>
+                                                <option value="Isingiro">Isingiro</option>
+                                                <option value="Jinja">Jinja</option>
+                                                <option value="Kaabong">Kaabong</option>
+                                                <option value="Kaabong">Kaabong</option>
+                                                <option value="Kabarole">Kabarole</option>
+                                                <option value="Kaberamaido">Kaberamaido</option>
+                                                <option value="Kaberamaido">Kaberamaido</option>
+                                                <option value="Kakumiro">Kakumiro</option>
+                                                <option value="Kalangala">Kalangala</option>
+                                                <option value="Kaliro">Kaliro</option>
+                                                <option value="Kalungu">Kalungu</option>
+                                                <option value="Kamuli">Kamuli</option>
+                                                <option value="Kamwenge">Kamwenge</option>
+                                                <option value="Kanungu">Kanungu</option>
+                                                <option value="Kapchorwa">Kapchorwa</option>
+                                                <option value="Kapelebyong">Kapelebyong</option>
+                                                <option value="Kasanda">Kasanda</option>
+                                                <option value="Kasese">Kasese</option>
+                                                <option value="Katakwi">Katakwi</option>
+                                                <option value="Kayunga">Kayunga</option>
+                                                <option value="Kibaale">Kibaale</option>
+                                                <option value="Kiboga">Kiboga</option>
+                                                <option value="Kibuku">Kibuku</option>
+                                                <option value="Kibuku">Kibuku</option>
+                                                <option value="Kigezi">Kigezi</option>
+                                                <option value="Kiruhura">Kiruhura</option>
+                                                <option value="Kiryandongo">Kiryandongo</option>
+                                                <option value="Kisoro">Kisoro</option>
+                                                <option value="Kitgum">Kitgum</option>
+                                                <option value="Koboko">Koboko</option>
+                                                <option value="Kole">Kole</option>
+                                                <option value="Kotido">Kotido</option>
+                                                <option value="Kumi">Kumi</option>
+                                                <option value="Kwania">Kwania</option>
+                                                <option value="Kween">Kween</option>
+                                                <option value="Kyankwanzi">Kyankwanzi</option>
+                                                <option value="Kyegegwa">Kyegegwa</option>
+                                                <option value="Kyenjojo">Kyenjojo</option>
+                                                <option value="Kyotera">Kyotera</option>
+                                                <option value="Lamwo">Lamwo</option>
+                                                <option value="Lira">Lira</option>
+                                                <option value="Luuka">Luuka</option>
+                                                <option value="Luweero">Luweero</option>
+                                                <option value="Lwengo">Lwengo</option>
+                                                <option value="Lyantonde">Lyantonde</option>
+                                                <option value="Manafwa">Manafwa</option>
+                                                <option value="Maracha">Maracha</option>
+                                                <option value="Masaka">Masaka</option>
+                                                <option value="Masindi">Masindi</option>
+                                                <option value="Mayuge">Mayuge</option>
+                                                <option value="Mbale">Mbale</option>
+                                                <option value="Mbarara">Mbarara</option>
+                                                <option value="Mitooma">Mitooma</option>
+                                                <option value="Mityana">Mityana</option>
+                                                <option value="Moroto">Moroto</option>
+                                                <option value="Moyo">Moyo</option>
+                                                <option value="Mpigi">Mpigi</option>
+                                                <option value="Mubende">Mubende</option>
+                                                <option value="Mukono">Mukono</option>
+                                                <option value="Nabilatuk">Nabilatuk</option>
+                                                <option value="Nakapiripirit">Nakapiripirit</option>
+                                                <option value="Nakaseke">Nakaseke</option>
+                                                <option value="Nakasongola">Nakasongola</option>
+                                                <option value="Namayingo">Namayingo</option>
+                                                <option value="Namisindwa">Namisindwa</option>
+                                                <option value="Namutumba">Namutumba</option>
+                                                <option value="Napak">Napak</option>
+                                                <option value="Nebbi">Nebbi</option>
+                                                <option value="Ngora">Ngora</option>
+                                                <option value="Ntoroko">Ntoroko</option>
+                                                <option value="Ntungamo">Ntungamo</option>
+                                                <option value="Nwoya">Nwoya</option>
+                                                <option value="Omoro">Omoro</option>
+                                                <option value="Otuke">Otuke</option>
+                                                <option value="Oyam">Oyam</option>
+                                                <option value="Pader">Pader</option>
+                                                <option value="Pakwach">Pakwach</option>
+                                                <option value="Pallisa">Pallisa</option>
+                                                <option value="Rakai">Rakai</option>
+                                                <option value="Rubanda">Rubanda</option>
+                                                <option value="Rubirizi">Rubirizi</option>
+                                                <option value="Rukiga">Rukiga</option>
+                                                <option value="Rukungiri ">Rukungiri </option>
+                                                <option value="Sembabule">Sembabule</option>
+                                                <option value="Serere">Serere</option>
+                                                <option value="Sheema">Sheema</option>
+                                                <option value="Sironko">Sironko</option>
+                                                <option value="Soroti">Soroti</option>
+                                                <option value="Tororo">Tororo</option>
+                                                <option value="Wakiso">Wakiso</option>
+                                                <option value="Yumbe">Yumbe</option>
+                                                <option value="Zombo">Zombo</option>
+
+                                        </select>
+                                        
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row10col2">
@@ -504,7 +663,7 @@ county-->
                                 <div class="col-sm-4 form-group" id="row11col1">
                                         <label for="hhla1">Language 1</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhla1" name="hhlang1"required>
+                                        <select id="hhla1" name="hhlang1" required>
                                                 <option value="default">Main Spoken Language</option>
                                                 <option value="English">English</option>
                                                 <option value="Acholi">Acholi</option>
@@ -663,10 +822,10 @@ county-->
                                         <label for="hhmdco">Medical Check</label>
                                         <span class="asterix"></span>
                                         <select id="hhmdco" name="hhmedcom">
-                                                <option value="default">Medical Exam</option>
-                                                <option value="valid">Med-Ex done.</option>
-                                                <option value="invalid">Med-Ex NOT yet done.</option>
-                                                <option value="expired">Med-Ex expired</option>
+                                                <option value="default">Do you have a Med-Ex certificate?</option>
+                                                <option value="valid">Med-Exam done.</option>
+                                                <option value="invalid">Med-Exam NOT yet done.</option>
+                                                <option value="expired">Med- expired</option>
                                         </select>
                                 </div>
 
@@ -674,7 +833,7 @@ county-->
                                         <label for="hhintcle">Background check</label>
                                         <span class="asterix"></span>
                                         <select id="hhintcle" name="hhintpocle">
-                                                <option value="default">Verification Status</option>
+                                                <option value="default">Has KYK Verified you yet?</option>
                                                 <option value="valid">KYK has verified me</option>
                                                 <option value="invalid">KYK has NOT yet verified me</option>
                                                 <option value="expired">My KYK verification expired</option>
@@ -687,21 +846,22 @@ county-->
 
                         <div class="row" id="hhsignuprow13">
                                 <div class="col-sm-4 form-group" id="row13col1">
-                                        <label for="usenm">Username</label>
+                                        <label for="hhusenm">Username</label>
                                         <span class="asterix">*</span>
-                                        <input type="text" id="usenm" placeholder="e.g. Cl3v3rus3r"required>
+                                        <input type="text" id="hhusenm" name="hhusernm" placeholder="e.g. Cl3v3rus3r"
+                                                required>
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row13col2">
                                         <label for="hhmdco">Password</label>
                                         <span class="asterix">*</span>
-                                        <input type="text" id="hhmdco" placeholder="e.g. &Yhgj546#!"required>
+                                        <input type="text" id="hhmdco" placeholder="e.g. &Yhgj546#!" required>
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row13col3">
                                         <label for="hhintcle">Confirm Password</label>
                                         <span class="asterix">*</span>
-                                        <input type="text" id="hhintcle" placeholder="e.g.&Yhgj546#!"required>
+                                        <input type="text" id="hhintcle" placeholder="e.g.&Yhgj546#!" required>
                                 </div>
                         </div>
 
@@ -709,13 +869,14 @@ county-->
 
                         <div class="row" id="hhsignuprow14">
                                 <div class="col-sm-12 form-group" id="row14col1">
-                                <button id="subbtn" type="button" class="btn btn-primary btn-sm btn-block" onclick="valhhsignup()">Submit</button>
+                                        <button id="subbtn" type="button" class="btn btn-primary btn-sm btn-block"
+                                                onclick="valhhsignup()">Submit</button>
                                 </div>
                         </div>
 
                 </form>
 
-<!-- ROW 15 - Footer here i.e. submit button --->
+                <!-- ROW 15 - Footer here i.e. submit button 
                 <div>
                         <div class="row" id="hhsignuprow15">
                                 <div class="col-sm-12 form-group" id="row15col1" >
@@ -725,269 +886,17 @@ county-->
                                 </div>
                                 
                         </div>
+                        --->
 
 
-                </div>
-
-
-                
         </div>
-       
-        
-        <script type="text/javascript">
-        
-        /** This javascript file written by Timothy Mwandha validates the data entered into
- *  the House Helpers Sign Up form. */
-
- var valhhsignup = () =>{
-
-const hhfna = document.getElementById('hhfna');
-const hhlna = document.getElementById('hhlna');
-const hhdobd = document.getElementById('hhdobd');
-const hhdobm = document.getElementById('hhdobm');
-const hhdoby = document.getElementById('hhdoby');
-const hhgen = document.getElementById('hhgen');
-const hhnat = document.getElementById('hhnat');
-const hhnid = document.getElementById('hhnid');
-const hhmo1 = document.getElementById('hhmo1');
-const hhrel= document.getElementById('hhrel');
-const hhtri = document.getElementById('hhtri');
-const hhema = document.getElementById('hhema');
-const hhedu = document.getElementById('hhedu');
-const hhsal = document.getElementById('hhsal');
-const hhex = document.getElementById('hhex');
-const hhad3 = document.getElementById('hhad3');
-const hhad7 = document.getElementById('hhad7');
-const hhad8 = document.getElementById('hhad8');
-const hhad9 = document.getElementById('hhad9');
-const hhla1 = document.getElementById('hhla1');
-const usenm = document.getElementById('usenm');
-const hhhopas = document.getElementById('hhhopas');
-const hh1pas = document.getElementById('hh1pas');
-let numerals = /^[0-9]+$/
-let alphabet = /^[A-Za-z]+$/
-let alphanumeric = /^[A-Za-z0-9]+$/
 
 
 
-/**   the conditional statements check IF the data entered by the user is valid
- * and gives the user feedback to enter the correct data. Else the program continues 
- * to execution - to send the house helpers particulars to the database. */
-
-//validating the data entered into the customer ID element
-
-if (hhfna.value.length == 0 || hhfna.value ==null) {
-  alert("First Name cannot be blank.");
-  hhfna.style.border = "2px solid red";
-  hhfna.focus();
-  console.log("First name is false");
-  }
-else {
-  console.log("First Name is true");
-  }
-
-if (hhlna.value.length == 0 || hhfna.value ==null) {
-  alert("Last Name cannot be blank.");
-  hhlna.style.border = "2px solid red";
-  hhlna.focus();
-  console.log("Last name is false");
-  }
-  else {
-    console.log("Last name is true");
-  } 
-
-if(hhdobd.value == "default"){
-    alert('Select your date of birth from the list');
-    hhdobd.style.border ="2px solid red";
-    hhdobd.focus();
-    console.log("day is not selected");
-    }
-else{
-  console.log("day is true");
-}
-
-if(hhdobm.value == "default"){
-  alert('Select your month of birth from the list');
-  hhdobm.style.border ="2px solid red";
-  hhdobm.focus();
-  console.log("month is not selected");
-  }
-else{
-console.log("month is true");
-}
-
-if(hhdoby.value == "default"){
-  alert('Select your year of birth from the list');
-  hhdoby.style.border ="2px solid red";
-  hhdoby.focus();
-  console.log("year is not selected");
-  }
-else{
-console.log("year is true");
-}
+        </div>
 
 
-if(hhgen.value == "default"){
-  alert('Select your gender from the list');
-  hhgen.style.border ="2px solid red";
-  hhgen.focus();
-  console.log("gender is not selected");
-  }
-else{
-console.log("gender is true");
-}
-
-
-if(hhnat.value == "default"){
-  alert('Select your nationality from the list');
-  hhnat.style.border ="2px solid red";
-  hhnat.focus();
-  console.log("nationality is not selected");
-  }
-else{
-console.log("nationality is true");
-}
-
-if(hhnid.value.match(alphanumeric)){
-console.log("national ID is alphanumeric");
-}
-else{
-alert('Nationality ID cannot be blank.');
-hhnid.style.border = "2px solid red";
-hhnid.focus();
-
-}
-
-if(hhmo1.value.match(numerals) && hhmo1.value.length == 12){
-console.log ("telephone correct");
-}
-else{
-alert('Mobile should be 12 digits, starting with 2567.');
-hhmo1.style.border = "2px solid red";
-hhmo1.focus();
-}
-
-if(hhrel.value == "default"){
-alert('Select your religion from the list');
-hhrel.style.border ="2px solid red";
-hhrel.focus();
-console.log("religion is not selected");
-}
-else{
-console.log("religion is true");
-}
-
-if(hhtri.value == "default"){
-alert('Select your tribe from the list');
-hhtri.style.border ="2px solid red";
-hhtri.focus();
-console.log("tribe is not selected");
-}
-else{
-console.log("tribe is true");
-}
-
-if(!hhema.value.includes('@') || !hhema.value.includes('.') ){
-alert ('EMAIL address format is not valid.');
-hhema.style.border="2px solid red";
-hhema.focus();
-
-}
-else{
-console.log("email is true");
-}
-
-if(hhedu.value == "default"){
-alert('Select your education level from the list');
-hhedu.style.border ="2px solid red";
-hhedu.focus();
-console.log("education is not selected");
-}
-else{
-console.log("education is true");
-}
-
-if(hhsal.value == "default"){
-alert('Select your salary requirement from the list');
-hhsal.style.border ="2px solid red";
-hhsal.focus();
-console.log("salary is not selected");
-}
-else{
-console.log("salary is true");
-}
-
-if(hhex.value == "default"){
-alert('Select your experience years from the list');
-hhex.style.border ="2px solid red";
-hhex.focus();
-console.log("experience is not selected");
-}
-else{
-console.log("experience is true");
-}
-
-if (hhad3.value.length == 0 || hhfna.value ==null) {
-alert("Village Name cannot be blank.");
-hhad3.style.border = "2px solid red";
-hhad3.focus();
-console.log("Village name is false");
-}
-else {
-console.log("Village Name is true");
-}
-
-if (hhad7.value.length == 0 || hhfna.value ==null) {
-  alert("District Name cannot be blank.");
-  hhad7.style.border = "2px solid red";
-  hhad7.focus();
-  console.log("District name is false");
-  }
-else {
-  console.log("District Name is true");
-  }
-
-if(hhad8.value == "default"){
-    alert('Select your native Country from the list');
-    hhad8.style.border ="2px solid red";
-    hhad8.focus();
-    console.log("Country is not selected");
-    }
-else{
-  console.log("Country is true");
-  }
-
-if(hhla1.value == "default"){
-    alert('Select a language from the list');
-    hhla1.style.border ="2px solid red";
-    hhla1.focus();
-    console.log("Language is not selected");
-    }
-else{
-  console.log("Language is true");
-  }
-
-let usenmlen = usenm.value.length;
-if (usenmlen == 0 || usenmlen >= 12 || usenmlen < 5){
-  alert('User name should have length of between 5 and 12.');
-  usenm.style.border = "2px solid red";
-  usenm.focus();
-}
-else{
-      return true;
-}
-
-if(hhhopas == hh1pas){
-alert("You have sucessfully signed up!  CONGRATULATIONS.");
-
-
-
-}
-
-}
-        
-        
-        </script>
+        <script type="text/javascript" src="valhhsignup.js"></script>
 </body>
 
 </html>

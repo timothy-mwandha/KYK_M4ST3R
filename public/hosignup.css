@@ -7,11 +7,11 @@ label
 {
     color: #3D5A99;
     text-align:right;
-    
+    font-size: smaller;
 }
 
 
-#hhsignupcon
+#hosignupcon
 {
     border: 2px solid blue;
     margin-left: auto;
@@ -22,14 +22,10 @@ label
 #subbtn
 {
 font-size: 2rem;
-width: 30%;
-margin: 25px;
-margin-left : auto;
-margin-right: auto;
 }
 
 
-#hhsignuprow1
+#hosignuprow1
 {
     background-color:#265b89;
     color: white;
@@ -41,20 +37,18 @@ p
 {
     text-emphasis-color: white;
     position: relative;
-    font-size: 14px;
-    vertical-align: text-bottom;
 }
 
-#hhsignuprow2
+#hosignuprow2
 {
     padding-top: 10px;
 }
 
 
-#hhfna, #hhfna, #hhmna,#hhlna,#hhnat,#hhnid,#hhmo1,#hhmo2,#hhwan,
-#hhmmn,#hhema,#hhhmt,#hhad1,#hhad2,#hhad3,#hhad4,#hhad5,#hhad6,
-#hhad9,#hhedu, #hhsal,#hhla1,#hhla2,#hhla3,#hhkid,#hhkykcn,
-#usenm,#hhHopas,#hh1pas, #hhusenm
+#hofna, #hofna, #homna,#holna,#honid,#homo1,#homo2,#howan,
+#hommn,#hoema,#hohmt,#hoad1,#hoad2,#hoad3,#hoad4,#hoad5,#hoad6,#hoad7,
+#hoad9,#hoedu, #hosal,#hola1,#hola2,#hola3,#hokid,#hokykcn,#housenm, 
+#usenm,#hopas,#ho1pas
 {
 
 float: right;
@@ -63,8 +57,8 @@ width: 50%;
 }
 
 
-#hhdoby, #hhgen, #hhrel, #hhtri, #hhedu, #hhsal, #hhdobd, #hhdobm, #hhla1, #hhla2, #hhla3,
-#hhintcle, #hhmdco, #hhex, #hhad7,#hhad8
+#hodoby, #hogen, #horel, #hotri, #hoedu, #hosal, #hodobd, #hodobm, #hola1, #hola2, #hola3,
+#hointcle, #homdco, #hoex, #hoad8, #honat
 {
 height: 25px;
 float: right;
@@ -83,6 +77,7 @@ width: 50%;
 ::placeholder
 {
 color: #265b89;
+font-size: small;
 font-size: 1rem;
 
 }
@@ -92,4 +87,5 @@ select
     color: #265b89;
     font-size: 1rem;
 }
+
 

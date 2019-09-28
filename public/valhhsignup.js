@@ -23,7 +23,7 @@
   const hhad8 = document.getElementById('hhad8');
   const hhad9 = document.getElementById('hhad9');
   const hhla1 = document.getElementById('hhla1');
-  const usenm = document.getElementById('usenm');
+  const hhusenm = document.getElementById('hhusenm');
   const hhhopas = document.getElementById('hhhopas');
   const hh1pas = document.getElementById('hh1pas');
   let numerals = /^[0-9]+$/
@@ -229,11 +229,11 @@ else{
     console.log("Language is true");
     }
 
-let usenmlen = usenm.value.length;
-if (usenmlen == 0 || usenmlen >= 12 || usenmlen < 5){
+let hhusenmlen = hhusenm.value.length;
+if (hhusenmlen == 0 || hhusenmlen >= 12 || hhusenmlen < 5){
     alert('User name should have length of between 5 and 12.');
-    usenm.style.border = "2px solid red";
-    usenm.focus();
+    hhusenm.style.border = "2px solid red";
+    hhusenm.focus();
 }
 else{
         return true;
