@@ -1,0 +1,30 @@
+{
+  "name": "kyk_m4st3r",
+  "version": "1.0.0",
+  "description": "",
+  "main": "kyk_nodejs_server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
+    "express-session":"^1.16.2"
+
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timothy-mwandha/KYK_M4ST3R.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timothy-mwandha/KYK_M4ST3R/issues"
+  },
+  "homepage": "https://github.com/timothy-mwandha/KYK_M4ST3R#readme"
+}

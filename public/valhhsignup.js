@@ -1,7 +1,7 @@
 /** This javascript file written by Timothy Mwandha validates the data entered into
  *  the House Helpers Sign Up form */
 
- var valhhsignup = () =>{
+var valhhsignup = () =>{
 
   const hhfna = document.getElementById('hhfna');
   const hhlna = document.getElementById('hhlna');
@@ -21,13 +21,11 @@
   const hhad3 = document.getElementById('hhad3');
   const hhad7 = document.getElementById('hhad7');
   const hhad8 = document.getElementById('hhad8');
-  const hhad9 = document.getElementById('hhad9');
   const hhla1 = document.getElementById('hhla1');
   const hhusenm = document.getElementById('hhusenm');
   const hhhopas = document.getElementById('hhhopas');
   const hh1pas = document.getElementById('hh1pas');
   let numerals = /^[0-9]+$/
-  let alphabet = /^[A-Za-z]+$/
   let alphanumeric = /^[A-Za-z0-9]+$/
 
   
@@ -40,7 +38,7 @@
 
 if (hhfna.value.length == 0 || hhfna.value ==null) {
     alert("First Name cannot be blank.");
-    hhfna.style.border = "2px solid red";
+    hhfna.style.border = "2px solid blue";
     hhfna.focus();
     console.log("First name is false");
     }
@@ -50,7 +48,7 @@ if (hhfna.value.length == 0 || hhfna.value ==null) {
 
 if (hhlna.value.length == 0 || hhfna.value ==null) {
     alert("Last Name cannot be blank.");
-    hhlna.style.border = "2px solid red";
+    hhlna.style.border = "2px solid blue";
     hhlna.focus();
     console.log("Last name is false");
     }
@@ -60,7 +58,7 @@ if (hhlna.value.length == 0 || hhfna.value ==null) {
 
   if(hhdobd.value == "default"){
       alert('Select your date of birth from the list');
-      hhdobd.style.border ="2px solid red";
+      hhdobd.style.border ="2px solid blue";
       hhdobd.focus();
       console.log("day is not selected");
       }
@@ -70,7 +68,7 @@ if (hhlna.value.length == 0 || hhfna.value ==null) {
 
   if(hhdobm.value == "default"){
     alert('Select your month of birth from the list');
-    hhdobm.style.border ="2px solid red";
+    hhdobm.style.border ="2px solid blue";
     hhdobm.focus();
     console.log("month is not selected");
     }
@@ -80,7 +78,7 @@ if (hhlna.value.length == 0 || hhfna.value ==null) {
 
   if(hhdoby.value == "default"){
     alert('Select your year of birth from the list');
-    hhdoby.style.border ="2px solid red";
+    hhdoby.style.border ="2px solid blue";
     hhdoby.focus();
     console.log("year is not selected");
     }
@@ -91,7 +89,7 @@ if (hhlna.value.length == 0 || hhfna.value ==null) {
 
   if(hhgen.value == "default"){
     alert('Select your gender from the list');
-    hhgen.style.border ="2px solid red";
+    hhgen.style.border ="2px solid blue";
     hhgen.focus();
     console.log("gender is not selected");
     }
@@ -99,10 +97,11 @@ if (hhlna.value.length == 0 || hhfna.value ==null) {
   console.log("gender is true");
   }
 
+  // comment out from here to test posting to database - twm 071019
   
   if(hhnat.value == "default"){
     alert('Select your nationality from the list');
-    hhnat.style.border ="2px solid red";
+    hhnat.style.border ="2px solid blue";
     hhnat.focus();
     console.log("nationality is not selected");
     }
@@ -115,7 +114,7 @@ if(hhnid.value.match(alphanumeric)){
 }
 else{
   alert('Nationality ID cannot be blank.');
-  hhnid.style.border = "2px solid red";
+  hhnid.style.border = "2px solid blue";
   hhnid.focus();
 
 }
@@ -125,13 +124,13 @@ if(hhmo1.value.match(numerals) && hhmo1.value.length == 12){
 }
 else{
   alert('Mobile should be 12 digits, starting with 2567.');
-  hhmo1.style.border = "2px solid red";
+  hhmo1.style.border = "2px solid blue";
   hhmo1.focus();
 }
 
 if(hhrel.value == "default"){
   alert('Select your religion from the list');
-  hhrel.style.border ="2px solid red";
+  hhrel.style.border ="2px solid blue";
   hhrel.focus();
   console.log("religion is not selected");
   }
@@ -141,7 +140,7 @@ console.log("religion is true");
 
 if(hhtri.value == "default"){
   alert('Select your tribe from the list');
-  hhtri.style.border ="2px solid red";
+  hhtri.style.border ="2px solid blue";
   hhtri.focus();
   console.log("tribe is not selected");
   }
@@ -151,7 +150,7 @@ console.log("tribe is true");
 
 if(!hhema.value.includes('@') || !hhema.value.includes('.') ){
   alert ('EMAIL address format is not valid.');
-  hhema.style.border="2px solid red";
+  hhema.style.border="2px solid blue";
   hhema.focus();
   
   }
@@ -161,7 +160,7 @@ else{
 
 if(hhedu.value == "default"){
   alert('Select your education level from the list');
-  hhedu.style.border ="2px solid red";
+  hhedu.style.border ="2px solid blue";
   hhedu.focus();
   console.log("education is not selected");
   }
@@ -171,7 +170,7 @@ console.log("education is true");
 
 if(hhsal.value == "default"){
   alert('Select your salary requirement from the list');
-  hhsal.style.border ="2px solid red";
+  hhsal.style.border ="2px solid blue";
   hhsal.focus();
   console.log("salary is not selected");
   }
@@ -181,7 +180,7 @@ console.log("salary is true");
 
 if(hhex.value == "default"){
   alert('Select your experience years from the list');
-  hhex.style.border ="2px solid red";
+  hhex.style.border ="2px solid blue";
   hhex.focus();
   console.log("experience is not selected");
   }
@@ -191,7 +190,7 @@ console.log("experience is true");
 
 if (hhad3.value.length == 0 || hhfna.value ==null) {
   alert("Village Name cannot be blank.");
-  hhad3.style.border = "2px solid red";
+  hhad3.style.border = "2px solid blue";
   hhad3.focus();
   console.log("Village name is false");
   }
@@ -201,7 +200,7 @@ else {
 
 if (hhad7.value.length == 0 || hhfna.value ==null) {
     alert("District Name cannot be blank.");
-    hhad7.style.border = "2px solid red";
+    hhad7.style.border = "2px solid blue";
     hhad7.focus();
     console.log("District name is false");
     }
@@ -211,7 +210,7 @@ else {
 
 if(hhad8.value == "default"){
       alert('Select your native Country from the list');
-      hhad8.style.border ="2px solid red";
+      hhad8.style.border ="2px solid blue";
       hhad8.focus();
       console.log("Country is not selected");
       }
@@ -221,7 +220,7 @@ else{
 
 if(hhla1.value == "default"){
       alert('Select a language from the list');
-      hhla1.style.border ="2px solid red";
+      hhla1.style.border ="2px solid blue";
       hhla1.focus();
       console.log("Language is not selected");
       }
@@ -232,18 +231,32 @@ else{
 let hhusenmlen = hhusenm.value.length;
 if (hhusenmlen == 0 || hhusenmlen >= 12 || hhusenmlen < 5){
     alert('User name should have length of between 5 and 12.');
-    hhusenm.style.border = "2px solid red";
+    hhusenm.style.border = "2px solid blue";
     hhusenm.focus();
 }
 else{
-        return true;
+    console.log('username length is true');
 }
 
-if(hhhopas == hh1pas){
-alert("You have sucessfully signed up!");
+let hhhopaslen = hhhopas.value.length;
+if (hhhopaslen == 0 || hhhopaslen >= 12 || hhhopaslen < 5){
+alert('Password cannot be empty. Use more than 5 and less than 12 characters');
+hhhopas.style.border = "2px solid blue";
+hhhopas.focus();
+}
+else{
+  console.log('pass is true');
+}
 
+if(hhhopas.value !== hh1pas.value){
+alert("Your passwords do not match");
 
-
+}
+else
+{
+  alerts('You have sucessfully signed up!');
+  //return true;
 }
 
 }
+

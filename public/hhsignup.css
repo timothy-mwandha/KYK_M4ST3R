@@ -5,7 +5,7 @@
 
 label
 {
-    color: #3D5A99;
+    color: #265b89;
     text-align:right;
     
 }
@@ -31,10 +31,11 @@ margin-right: auto;
 
 #hhsignuprow1
 {
-    background-color:#265b89;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
+   
+    color: #265b89;
+    font-size: 0rem;
+    padding:5px;
+    
 }
 
 p
@@ -51,10 +52,10 @@ p
 }
 
 
-#hhfna, #hhfna, #hhmna,#hhlna,#hhnat,#hhnid,#hhmo1,#hhmo2,#hhwan,
+#hhfna, #hhfna, #hhmna,#hhlna,#hhnid,#hhmo1,#hhmo2,#hhwan,
 #hhmmn,#hhema,#hhhmt,#hhad1,#hhad2,#hhad3,#hhad4,#hhad5,#hhad6,
 #hhad9,#hhedu, #hhsal,#hhla1,#hhla2,#hhla3,#hhkid,#hhkykcn,
-#usenm,#hhHopas,#hh1pas, #hhusenm
+#usenm,#hhhopas,#hh1pas, #hhusenm
 {
 
 float: right;
@@ -64,7 +65,7 @@ width: 50%;
 
 
 #hhdoby, #hhgen, #hhrel, #hhtri, #hhedu, #hhsal, #hhdobd, #hhdobm, #hhla1, #hhla2, #hhla3,
-#hhintcle, #hhmdco, #hhex, #hhad7,#hhad8
+#hhintcle, #hhmdco, #hhex, #hhad7,#hhad8,#hhnat
 {
 height: 25px;
 float: right;
@@ -93,3 +94,19 @@ select
     font-size: 1rem;
 }
 
+#row1col1, #row1col1, #row1col1
+{
+height: 50px;
+
+}
+
+#hhsignuplogo
+{
+align-content: left;
+}
+
+#clipart
+{
+float: center;
+
+}

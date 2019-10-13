@@ -7,19 +7,30 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="hhsignup.css">
+        <script type="text/javascript" src="valhhsignup.js"></script>
         <title>House_Helper_SignUp</title>
 </head>
 
 <body>
         <div class="container-fluid center-block" " id=" hhsignupcon">
                 <div class="row" id="hhsignuprow1">
-                        <div class="col-sm-12" id="row1col1">
-                                <p><b>House Helpers SignUp Here.</b> </p>
+                        <div class="col-sm-4" id="row1col1">
+                                <img alt="house work1" id="hhsignuplogo" src="images/kyk_logo_small2.jpg" />
+                                <img alt="house work2" id="clipart" src="images/workclipart5.jpg"/>
+                                <img alt="house work3" id="clipart" src="images/workclipart2.jpg"/>
+                        </div>
+
+                        <div class="col-sm-4" id="row1col2">
+                                
+                        </div>
+
+                        <div class="col-sm-4" id="row1col3">
+                                
                         </div>
 
                 </div>
 
-                <form class="form-group" action="#" method="POST">
+                <form class="form-group" action="posthh" method="POST">
 
                         <!-- ROW 2 NAME starts here i.e. first, middle and last name  -->
 
@@ -27,20 +38,20 @@
                                 <div class="col-sm-4 form-group" id="row2col1">
                                         <label for="hhfna">First Name</label>
                                         <span class="asterix">*</span>
-                                        <input type="text" id="hhfna" placeholder="e.g. Tim" autofocus>
+                                        <input type="text" id="hhfna" name="hhfnam" placeholder="e.g. Tim" autofocus>
 
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row2col2">
                                         <label for="hhmna">Middle Name</label>
                                         <span class="asterix"></span>
-                                        <input type="text" id="hhmna" placeholder="e.g. Wampa">
+                                        <input type="text" id="hhmna" name="hhmnam" placeholder="e.g. Wampa">
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row2col3">
                                         <label for="hhlna">Last Name</label>
                                         <span class="asterix">*</span>
-                                        <input type="text" id="hhlna" placeholder="e.g. Mwandha" required>
+                                        <input type="text" id="hhlna" name="hhlnam" placeholder="e.g. Mwandha" >
                                 </div>
 
 
@@ -52,7 +63,7 @@
                                 <div class="col-sm-4 form-group" id="row3col1">
                                         <label for="hhdobd">Date of Birth</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhdobd" name="date" required>
+                                        <select id="hhdobd" name="hhdobod" type="number" >
                                                 <option value="default">Select Day</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -92,7 +103,7 @@
                                 <div class="col-sm-4 form-group" id="row3col2">
                                         <label for="hhdobm">Month</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhdobm" name="month" required>
+                                        <select id="hhdobm" name="hhdobom" type="text" >
                                                 <option value="default">Select Month</option>
                                                 <option value="January">January</option>
                                                 <option value="February">February</option>
@@ -112,7 +123,7 @@
                                 <div class="col-sm-4 form-group" id="row3col3">
                                         <label for="hhdoby">Year</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhdoby" name="year" required>
+                                        <select id="hhdoby" name="hhdoboy" type="text">
                                                 <option value="default">Select Year</option>
                                                 <option value="2000">2000</option>
                                                 <option value="1999">1999</option>
@@ -147,7 +158,7 @@
                                 <div class="col-sm-4 form-group" id="row4col1">
                                         <label for="hhgen">Gender</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhgen" name="hhgend" required>
+                                        <select id="hhgen" name="hhgend" >
                                                 <option value="default">Select Gender</option>
                                                 <option value="female">Female</option>
                                                 <option value="male">Male</option>
@@ -157,7 +168,7 @@
                                 <div class="col-sm-4 form-group" id="row4col2">
                                         <label for="hhnat">Nationality</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhnat" name="hhnati" required>
+                                        <select id="hhnat" name="hhnati" >
                                                 <option value="default">Select Country</option>
                                                 <option value="ugandan">Ugandan</option>
                                                 <option value="burundian">Burundian</option>
@@ -174,7 +185,7 @@
                                 <div class="col-sm-4 form-group" id="row4col3">
                                         <label for="hhnid">National ID No.</label>
                                         <span class="asterix">*</span>
-                                        <input type="text" id="hhnid" placeholder="e.g. ZY87654321X9WV" required>
+                                        <input type="text" id="hhnid" name="hhnidn" placeholder="e.g. ZY87654321X9WV" >
                                 </div>
                         </div>
 
@@ -185,19 +196,19 @@
                                 <div class="col-sm-4 form-group" id="row5col1">
                                         <label for="hhmo1">Telephone No.</label>
                                         <span class="asterix">*</span>
-                                        <input type="text" id="hhmo1" placeholder="e.g. 256772123456" required>
+                                        <input type="text" id="hhmo1" name="hhmob1" placeholder="e.g. 256772123456" >
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row5col2">
                                         <label for="hhmo2">2nd Phone No.</label>
                                         <span class="asterix"></span>
-                                        <input type="text" id="hhmo2" placeholder="e.g. 256752123456">
+                                        <input type="text" id="hhmo2" name="hhmob2" placeholder="e.g. 256752123456">
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row5col3">
                                         <label for="hhwan">WhatsApp No.</label>
                                         <span class="asterix"></span>
-                                        <input type="text" id="hhwan" placeholder="e.g. 256712123456">
+                                        <input type="text" id="hhwan" name="hhwanu" placeholder="e.g. 256712123456">
                                 </div>
                         </div>
 
@@ -207,7 +218,7 @@
                                 <div class="col-sm-4 form-group" id="row7col1">
                                         <label for="hhrel">Religion</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhrel" name="hhreli" required>
+                                        <select id="hhrel" name="hhreli" >
                                                 <option value="default">Select Religion</option>
                                                 <option value="catholic">Catholic</option>
                                                 <option value="protestant">Protestant</option>
@@ -221,7 +232,7 @@
                                 <div class="col-sm-4 form-group" id="row5col2">
                                         <label for="hhtri">Tribe</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhtri" name="hhtrib" required>
+                                        <select id="hhtri" name="hhtrib">
                                                 <option value="default">Tribe</option>
                                                 <option value="Acholi">Acholi</option>
                                                 <option value="Alur">Alur</option>
@@ -271,7 +282,7 @@
                                 <div class="col-sm-4 form-group" id="row5col3">
                                         <label for="hhema">Email:</label>
                                         <span class="asterix">*</span>
-                                        <input type="email" id="hhema" placeholder="example@gmail.com" required>
+                                        <input type="email" id="hhema" name="hhemad" placeholder="example@gmail.com" >
                                 </div>
 
                         </div>
@@ -284,7 +295,7 @@
                                 <div class="col-sm-4 form-group" id="row7col1">
                                         <label for="hhedu">Education Level</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhedu" name="hhedul" required>
+                                        <select id="hhedu" name="hhedul" >
                                                 <option value="default">Education</option>
                                                 <option value="PLE">PLE</option>
                                                 <option value="UCE">UCE</option>
@@ -301,7 +312,7 @@
                                 <div class="col-sm-4 form-group" id="row7col2">
                                         <label for="hhsal">Salary Wanted</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhsal" name="hhnat" required>
+                                        <select id="hhsal" name="hhsalo" >
                                                 <option value="default">Min Salary Acceptable</option>
                                                 <option value="150k">shs150,000 - shs199,999</option>
                                                 <option value="200k">shs200,000 - shs299,999</option>
@@ -318,7 +329,7 @@
                                 <div class="col-sm-4 form-group" id="row7col3">
                                         <label for="hhex">Work Experience</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhex" name="hhexp" required>
+                                        <select id="hhex" name="hhexp" >
                                                 <option value="default">How Many Years?</option>
                                                 <option value="0">Zero</option>
                                                 <option value="0.5">Some Months</option>
@@ -343,19 +354,19 @@
                                 <div class="col-sm-4 form-group" id="row8col1">
                                         <label for="hhad1">Home Address</label>
                                         <span class="asterix"></span>
-                                        <input type="text" id="hhad1" placeholder="e.g.House no.17">
+                                        <input type="text" id="hhad1" name="hhadd1" placeholder="e.g.House no.17">
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row8col2">
                                         <label for="hhad2">Street Name</label>
                                         <span class="asterix"></span>
-                                        <input type="text" id="hhad2" placeholder="e.g. Bukoto street" required>
+                                        <input type="text" id="hhad2" name="hhadd2" placeholder="e.g. Bukoto street" >
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row8col3">
                                         <label for="hhad3">Village</label>
                                         <span class="asterix">*</span>
-                                        <input type="text" id="hhad3" placeholder="e.g. Ntinda" required>
+                                        <input type="text" id="hhad3" name="hhadd3" placeholder="e.g. Ntinda" >
                                 </div>
                         </div>
 
@@ -367,19 +378,19 @@ county-->
                                 <div class="col-sm-4 form-group" id="row9col1">
                                         <label for="hhad4">Parish</label>
                                         <span class="asterix"></span>
-                                        <input type="text" id="hhad4" placeholder="e.g. Naguru">
+                                        <input type="text" id="hhad4" name="hhadd4" placeholder="e.g. Naguru">
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row9col2">
                                         <label for="hhad5">Sub County</label>
                                         <span class="asterix"></span>
-                                        <input type="text" id="hhad5" placeholder="e.g. Nakawa">
+                                        <input type="text" id="hhad5" name="hhadd5" placeholder="e.g. Nakawa">
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row9col3">
                                         <label for="hhad6">County</label>
                                         <span class="asterix"></span>
-                                        <input type="text" id="hhad6" placeholder="e.g. Kyandondo">
+                                        <input type="text" id="hhad6" name="hhadd6" placeholder="e.g. Kyandondo">
                                 </div>
                         </div>
 
@@ -390,22 +401,24 @@ county-->
                                 <div class="col-sm-4 form-group" id="row10col1">
                                         <label for="hhad7">District</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhad7" name="hhadd7" required>
-                                                <option value="default">Select home district</option>
+
+                                        <select id="hhad7" name="hhadd7" >
+                                                <option value="default"> Home District </option>
                                                 <option value="Abim">Abim</option>
-                                                <option value="Adjumani">Adjumani</option>
+                                        </select>
+                                                <!-- <option value="Adjumani">Adjumani</option>
                                                 <option value="Agago">Agago</option>
-                                                <option value="Alebtong">Alebtong</option>
+                                               <option value="Alebtong">Alebtong</option>
                                                 <option value="Amolatar">Amolatar</option>
                                                 <option value="Amudat">Amudat</option>
                                                 <option value="Amuria">Amuria</option>
                                                 <option value="Amuru">Amuru</option>
                                                 <option value="Apac">Apac</option>
-                                                <option value="Arua ">Arua </option>
-                                                <option value=" Budaka ">Budaka </option>
-                                                <option value=" Bududa ">Bududa </option>
-                                                <option value=" Bugiri ">Bugiri </option>
-                                                <option value=" Bugweri">Bugweri</option>
+                                                <option value="Arua"> Arua</option>
+                                                <option value="Budaka">Budaka</option>
+                                                <option value="Bududa">Bududa</option>
+                                                <option value="Bugiri">Bugiri</option>
+                                                <option value="Bugweri">Bugweri</option>
                                                 <option value="Buhweju">Buhweju</option>
                                                 <option value="Buikwe">Buikwe</option>
                                                 <option value="Bukedea">Bukedea</option>
@@ -448,7 +461,6 @@ county-->
                                                 <option value="Kayunga">Kayunga</option>
                                                 <option value="Kibaale">Kibaale</option>
                                                 <option value="Kiboga">Kiboga</option>
-                                                <option value="Kibuku">Kibuku</option>
                                                 <option value="Kibuku">Kibuku</option>
                                                 <option value="Kigezi">Kigezi</option>
                                                 <option value="Kiruhura">Kiruhura</option>
@@ -516,17 +528,17 @@ county-->
                                                 <option value="Soroti">Soroti</option>
                                                 <option value="Tororo">Tororo</option>
                                                 <option value="Wakiso">Wakiso</option>
-                                                <option value="Yumbe">Yumbe</option>
-                                                <option value="Zombo">Zombo</option>
+                                                <option value="Yumbe">Yumbe</option> 
+                                                <option value="Zombo">Zombo</option> -->
 
-                                        </select>
+                                        
                                         
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row10col2">
                                         <label for="hhad8">Country</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhad8" name="hhadd8" required>
+                                        <select id="hhad8" name="hhadd8" >
                                                 <option value="default">Select Country</option>
                                                 <option value="ugandan">Uganda</option>
                                                 <option value="burundian">Burundian</option>
@@ -543,7 +555,7 @@ county-->
                                 <div class="col-sm-4 form-group" id="row10col3">
                                         <label for="hhad9">GPS Coordinates</label>
                                         <span class="asterix"></span>
-                                        <input type="number" id="hhad9" placeholder="Optional">
+                                        <input type="number" id="hhad9" name="hhadd9" placeholder="Optional">
                                 </div>
                         </div>
 
@@ -553,7 +565,7 @@ county-->
                                 <div class="col-sm-4 form-group" id="row11col1">
                                         <label for="hhla1">Language 1</label>
                                         <span class="asterix">*</span>
-                                        <select id="hhla1" name="hhlang1" required>
+                                        <select id="hhla1" name="hhlang1" >
                                                 <option value="default">Main Spoken Language</option>
                                                 <option value="English">English</option>
                                                 <option value="Acholi">Acholi</option>
@@ -705,7 +717,7 @@ county-->
                                 <div class="col-sm-4 form-group" id="row12col1">
                                         <label for="hhkid">KYK #No.</label>
                                         <span class="asterix"></span>
-                                        <input type="text" id="hhkid" placeholder="Optional">
+                                        <input type="text" id="hhkid" name="hhkykid" placeholder="Optional">
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row12col2">
@@ -713,9 +725,9 @@ county-->
                                         <span class="asterix"></span>
                                         <select id="hhmdco" name="hhmedcom">
                                                 <option value="default">Do you have a Med-Ex certificate?</option>
-                                                <option value="valid">Med-Exam done.</option>
-                                                <option value="invalid">Med-Exam NOT yet done.</option>
-                                                <option value="expired">Med- expired</option>
+                                                <option value="Medex Done">Med-Exam done.</option>
+                                                <option value="Medex Pending">Med-Exam NOT yet done.</option>
+                                                <option value="Medex Expired">Med- expired</option>
                                         </select>
                                 </div>
 
@@ -724,9 +736,9 @@ county-->
                                         <span class="asterix"></span>
                                         <select id="hhintcle" name="hhintpocle">
                                                 <option value="default">Has KYK Verified you yet?</option>
-                                                <option value="valid">KYK has verified me</option>
-                                                <option value="invalid">KYK has NOT yet verified me</option>
-                                                <option value="expired">My KYK verification expired</option>
+                                                <option value="Done">KYK has verified me</option>
+                                                <option value="Not Yet">KYK has NOT yet verified me</option>
+                                                <option value="Expired">My KYK verification expired</option>
                                         </select>
                                 </div>
                         </div>
@@ -738,20 +750,20 @@ county-->
                                 <div class="col-sm-4 form-group" id="row13col1">
                                         <label for="hhusenm">Username</label>
                                         <span class="asterix">*</span>
-                                        <input type="text" id="hhusenm" name="hhusernm" placeholder="e.g. Cl3v3rus3r"
-                                                required>
+                                        <input type="text" id="hhusenm" name="hhusername" placeholder="e.g. Cl3v3rus3r"
+                                                >
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row13col2">
-                                        <label for="hhmdco">Password</label>
+                                        <label for="hhhopas">Password</label>
                                         <span class="asterix">*</span>
-                                        <input type="text" id="hhmdco" placeholder="e.g. &Yhgj546#!" required>
+                                        <input type="text" id="hhhopas" name="hhpass" placeholder="e.g. &Yhgj546#!" >
                                 </div>
 
                                 <div class="col-sm-4 form-group" id="row13col3">
-                                        <label for="hhintcle">Confirm Password</label>
+                                        <label for="hh1pas">Confirm Password</label>
                                         <span class="asterix">*</span>
-                                        <input type="text" id="hhintcle" placeholder="e.g.&Yhgj546#!" required>
+                                        <input type="text" id="hh1pas" name="hh1pass" placeholder="e.g.&Yhgj546#!" >
                                 </div>
                         </div>
 
@@ -759,8 +771,9 @@ county-->
 
                         <div class="row" id="hhsignuprow14">
                                 <div class="col-sm-12 form-group" id="row14col1">
-                                        <button id="subbtn" type="button" class="btn btn-primary btn-sm btn-block"
-                                                onclick="valhhsignup()">Submit</button>
+                                        <button id="subbtn" type="submit" 
+                                        class="btn btn-primary btn-sm btn-block" 
+                                        onclick="valhhsignup()">Submit</button>
                                 </div>
                         </div>
 
